@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.db import models
-from django.utils import timezone
+from django.utils import timezone, timesince
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -16,4 +16,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+class Like(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    click_time = models.DateTimeField(default = timesince.timesince)
 # Create your models here.
