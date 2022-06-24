@@ -9,7 +9,7 @@ body {
 
 .page-header {
     background-color: #C25100;
-    margin-top:0;
+    margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 
@@ -17,6 +17,7 @@ body {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    margin-left: 80px;
 }
 
 .content {
@@ -40,10 +41,10 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
+    color: #C25100;
     float: right;
     font-size: 26pt;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .post {
@@ -54,3 +55,9 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
+.sign-in button {
+    float: right;
+    color: rgb(0, 0, 0);
+    margin-top : -55px;
+    margin-right: 20px;
+}

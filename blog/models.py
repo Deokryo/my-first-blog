@@ -19,4 +19,5 @@ class Post(models.Model):
 class Like(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     click_time = models.DateTimeField(default = timesince.timesince)
+
 # Create your models here.
