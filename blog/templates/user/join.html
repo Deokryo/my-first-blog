@@ -1,7 +1,28 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="join">
-        <p>회원가입페이지</p>
-    </div>
+    <form method ="post" class="join">{% csrf_token %}
+        <h1>sign in</h1>
+        <div class="email">
+            Email
+            <input type="email" id="" name="email" placeholder="Email">
+        </div>
+        <div class="username">
+            Nickname
+            <input type="text" id="" name="username" placeholder="Nickname">
+        </div>
+        <div class="password1">
+            Password
+            <input type="password" id="" name="password1" placeholder="Password">
+        </div>
+        <div class="password2">
+            Password Check
+            <input type="password" id="" name="password2" placeholder="Password Check">
+        </div>
+        <div>
+            <button type="submit" class = "save btn btn-default">Sign In</button>
+        </div>
+    
+          
+    </form>
 {% endblock %}

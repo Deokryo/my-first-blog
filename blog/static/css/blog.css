@@ -3,13 +3,10 @@ h1 a, h2 a {
     font-family: 'Lobster';
 }
 
-body { 
-    padding-left: 15px;
-}
 
 .page-header {
     background-color: #C25100;
-    margin-top: 0;
+    margin-top: 0px;
     padding: 20px 20px 20px 40px;
 }
 
@@ -17,7 +14,7 @@ body {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .content {
@@ -40,11 +37,18 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #C25100;
+.top-menu,  .top-menu:visited {
+    color: #ffffff;
     float: right;
-    font-size: 26pt;
-    margin-right: 100px;
+    font-size: 13pt;
+    margin-top: -10px;
+}
+
+.top-menu:hover{
+    float: right;
+    font-size: 13pt;
+    color: rgb(43, 255, 1);
+    margin-top: -10px;
 }
 
 .post {
@@ -55,9 +59,114 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
-.sign-in button {
+.sign-in a,  .sign-out .log-out {
     float: right;
-    color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     margin-top : -55px;
     margin-right: 20px;
+    font-family: 'Lobster';
+}
+
+.sign-in a :visited, .sign-in  a:active, .sign-in a:hover  {
+    float: right;
+    text-decoration: none;
+    color: rgb(43, 255, 1);
+    margin-top : -55px;
+    margin-right: 20px;
+    font-family: 'Lobster';
+}
+.sign-out  .log-out:active, .sign-out .log-out:hover  {
+    float: right;
+    text-decoration: none;
+    color: rgb(43, 255, 1);
+    margin-top : -55px;
+    margin-right: 20px;
+    font-family: 'Lobster';
+}
+
+.id input {
+    border-radius: 20px;
+    margin-top: 0px;
+    padding: 0px 10px;
+    border: solid lightsalmon;
+    outline: none;
+    width: 30%;
+    height: 40px;
+    position: absolute;
+    left: 60%;
+    top: 200px;
+
+
+}
+
+.pw input{
+    border-radius: 20px;
+    margin-top: 0px;
+    padding: 0px 10px;
+    border: solid lightsalmon;
+    outline: none;
+    width: 30%;
+    height: 40px;
+    position: absolute;
+    left: 60%;
+    top: 300px;
+
+}
+
+.l-in h1{
+    font-size: 30pt;
+    position: absolute;
+    left: 69%;
+    top: 50px;
+}
+
+.id h4 {
+    font-size: 24pt;
+    position: absolute;
+    left: 60%;
+    top: 160px;
+
+}
+
+.pw h4 {
+    font-size: 24pt;
+    position: absolute;
+    left: 60%;
+    top: 260px;
+
+
+}
+
+.in button{
+    position: absolute;
+    left: 85%;
+    top: 350px;
+    border: 0px;
+    background-color: #ffffff;
+
+}
+
+.up button{
+    position: absolute;
+    left: 58%;
+    top: 350px;
+    border: 0px;
+    background-color: #ffffff;
+}
+
+.l-in h2 {
+    font-size: 26pt;
+    position: absolute;
+    left: 65%;
+    top: 200px;
+}
+
+.user-name {
+    color: #ffffff;
+    float: right;
+    font-size: 13pt;
+    font-family: 'Lobster';
+    margin-right: 150px;
+    margin-top: -60px;
 }
